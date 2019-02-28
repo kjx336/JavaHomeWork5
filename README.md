@@ -34,5 +34,5 @@ import java.io.InputStreamReader;
 静态变量被所有的对象所共享，在内存中只有一个副本，它当且仅当在类初次加载时会被初始化<br>
 静态方法可以直接用名称引用，不需要this引用，在静态方法中不能访问类的非静态成员变量和非静态成员方法，因为非静态成员方法/变量都是必须依赖具体的对象才能够被调用<br>
 static可以用来形成静态代码块以优化程序性能，具体使用方式日后有待考究<br>
-[具体可以参考这里](https://www.cnblogs.com/0mbiubiu/p/5331390.html)
+[具体可以参考这里](https://www.cnblogs.com/0mbiubiu/p/5331390.html)<br>
 *Signed-off-by: 遥梦幽兰kzx <kjx336@163.com>*

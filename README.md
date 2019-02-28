@@ -1,5 +1,5 @@
-﻿ JavaHomeWork4
-类、对象基础知识（二）
+﻿ JavaHomeWork5
+类、对象基础知识（三）
 ===============
 任务与整体解决方案：
 ------
@@ -16,25 +16,23 @@
 
 ### 设计一个教师类和一个课程类。其中，教师类包括教师姓名和职称属性；课程类包括课程名和学分属性。再设计一个授课类，包含教师类型的授课教师属性和课程类型的所授课程属性，以及上课地点和学生人数属性。需为上述三个类定义相关行为描述。编写测试类，执行创建对象显示结果等操作。
 
-将教室类和课程类设置为静态，在新的类中创建两个此类，使用
+将教室类和课程类设置为静态，在新的类中创建两个此类即可.
 
 领悟：
 ------
-#### 这次命名、导入包的时候拼错了
-其余的很轻松<br>
-## 推至github时出现新问题
+### 几点小错误先放前面
+String变量中**S**要大写<br>
+想使用过滤流，需要加入如下头文件：
+```Java
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 ```
-fatal:'origin' does not appear to be a git repository 
-fatal:Could not read from remote repository
-```
-这个就是本地分支与远程分支断开了，输入
-```
-git remote –v
-```
-若啥反应都没有，就是这个问题了。<br>
-使用
-```
-git remote add origin https://github.com*****************.git
-```
-加关联即可，随后再remote看一下是否成功<br>
-之后的就搞定了，[具体可以参考这里](https://blog.csdn.net/huanhuaqian/article/details/81986064)
+**Junit不支持从控制台输入**<br>
+
+### 关于静态
+使用static修饰的变量/方法/代码块称为**静态**变量/方法/代码块<br>
+静态变量被所有的对象所共享，在内存中只有一个副本，它当且仅当在类初次加载时会被初始化<br>
+静态方法可以直接用名称引用，不需要this引用，在静态方法中不能访问类的非静态成员变量和非静态成员方法，因为非静态成员方法/变量都是必须依赖具体的对象才能够被调用<br>
+static可以用来形成静态代码块以优化程序性能，具体使用方式日后有待考究<br>
+[具体可以参考这里](https://www.cnblogs.com/0mbiubiu/p/5331390.html)
+*Signed-off-by: 遥梦幽兰kzx <kjx336@163.com>*
